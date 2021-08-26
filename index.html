@@ -64,7 +64,8 @@ z = "hello"                </code>
         <spa class="bold">y</spa> will have the value of <spa class="bold">3.65</spa> (points to a float object with value of 3.65)<br>
         <spa class="bold">z</spa> will have the value of the string <spa class="bold">"hello"</spa> (points to a string object with value of hello)<br>
         <br>
-        variables can always be re-assigned. 
+        variables can always be re-assigned
+        <br>
         Python does not allow you to make a variable <a title="unchanging over time or unable to be changed.">immutable</a>
         (Objects however can have immutable properties):
         <br>
@@ -74,32 +75,58 @@ x = 1.0
 x = "can be changed to any type"               </code>
         </pre>
         There is no particular syntax to tell when a variable is declared, the first assignment is just where the variable is created
-        The variable <spa class="bold">x</spa> here gets declared and assigned the value 52, which is then changed to 1.0 and finally re-assigned to a string. Python is dynamically typed and variables do not have to stick to a certain type throughout the code execution
+        <br>
+        The variable <spa class="bold">x</spa> here gets declared and assigned the value 52, which is then changed to 1.0 and finally re-assigned to a string
+        <br>
+        Python is dynamically typed and variables do not have to stick to a certain type throughout the code execution
         
-        <h2>Python Types 🔍</h2>
+        <h2>Python's Primitive Types 🔍</h2>
         Each Object in python has a type which determines what it is and gives you a hint at what it represents
         <br>
         These types are defined by <a title="a template for creating objects">classes-</a> which are definitions that specify how an object should be built, what data it has and what it can do
-        <br><br>
+        <br>
+        one thing I should note that is I have used a new syntax for declaring variables,
+        <br>
+        this syntax allows you to explicitly set the type of the variable 
+        <br>
+        here's the format:
+        <pre><code>[variable name]: [type] = [value]</code></pre>
+        <br>
+        <br>
+        note however that this does not enforce the variable to hold only that type,
+        it is just for reading and autocompletion purposes
+        <br>
         The basic types in python are:
         
-        <h3>int (integer) 🔢</h3>
+        <h3>int (Integer) 🔢</h3>
         represents a whole number (negatives and positives). In newer python versions this type has no limit, you can set it to a number that is as high as you want
-        
-        <h3>float (float-point number) #️⃣</h3>
+        <pre><code>x: int = 5</code></pre>
+
+        <h3>float (Float-point number) #️⃣</h3>
         represents a decimal number (negatives and positives). These have limited precision and can sometimes have unexpected behavior
-        
+        <pre><code>x: float = 2.7</code></pre>
+
         <h3>str (String) 🏷️</h3>
         represents a piece of text (a collection of 0, 1 or more characters)
+        <pre><code>x: str = "this is a string"</code></pre>
 
-        <h3>bool (boolean) 🔄</h3>
+        <h3>bool (Boolean) 🔄</h3>
         can be only be either <span class="ibold">True</span> or <span class="ibold">False</span>
-        
+        <pre><code>x: bool = False</code></pre>
+
         <h3>None ❓</h3>
         This type can only be <span class="ibold">None</span>. It is used to show that there is nothing there
         (for example, assigning <span class="bold">None</span> to a variable means it currently has no value)
+        <pre><code>x: None = None </code></pre>
+        *None doesn't really need to be explicitly typed
 
-        <br><br> <h1>*WIP*</h1> 
+        <h2>Python's Collection Types 🧮</h2>
+        <h3>list 📗</h3>
+        A collection type that can hold many objects (useful for holding hundreds or thousands of objects instead of making a variable for each)
+
+        <br>
+        <br> 
+        <h1>*WIP*</h1> 
         <br>
         </p>
 
