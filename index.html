@@ -109,7 +109,8 @@ x = "can be changed to any type"               </code>
         <h3>str (String) 🏷️</h3>
         represents a piece of text (a collection of 0, 1 or more characters)
         <pre><code>x: str = "this is a string"</code></pre>
-
+        single quotes also work
+        <pre><code>x: str = 'hello there!'</code></pre>
         <h3>bool (Boolean) 🔄</h3>
         can be only be either <span class="ibold">True</span> or <span class="ibold">False</span>
         <pre><code>x: bool = False</code></pre>
@@ -123,8 +124,23 @@ x = "can be changed to any type"               </code>
         <h2>Python's Collection Types 🧮</h2>
         <h3>list 📗</h3>
         A collection type that can hold many objects (useful for holding hundreds or thousands of objects instead of making a variable for each)
-
+        
         <br>
+        You can make one with the  <code>[a,b,c,...]</code> syntax
+        <pre><code>x: list = [1,10,23] </code></pre>
+        You can also have any type you want in it
+        <pre><code>x: list = [4.325, 7, "hello"] </code></pre>
+        Retrieving an element from the list is done with the index syntax <code>[index]</code>
+        <pre><code>x: list = [4.325, 7, "hello"] 
+num : float = x[0]
+num2: int   = x[1]
+hi  : str   = x[2]
+print(x)    //prints 4.325
+print(num2) //prints 7
+print(hi)   //prints hello</code></pre>
+        note that the indices for lists start at 0, so the first element is actually at the 0th index not 1
+        <br>
+        ALSO the types (the <code>: float</code> part of <code>x: float</code>) I am writing are unneccessary but you should write them to get used to it
         <br> 
         <h1>*WIP*</h1> 
         <br>
