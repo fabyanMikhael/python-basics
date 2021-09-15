@@ -80,6 +80,14 @@
 
 pre {
   text-align: left;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  pre {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: smaller;
+  }
 }
