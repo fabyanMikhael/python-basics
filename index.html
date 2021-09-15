@@ -171,7 +171,15 @@ dictionary['new val'] = 'changing the value'
 dictionary['delete me'] = ["you can nest lists", "and", "dictionaries"]
 del dictionary['delete me'] # 'delete me' is now gone
 print(dictionary['delete me']) # this will cause an error</code></pre>
-<h1>*WIP*</h1> 
+        <h1>*WIP*</h1> 
+        <button id="fireworkBTN" style="font-size: 200%;">🎆</button>
+        <script>
+            const btn = document.getElementById('fireworkBTN');
+            btn.addEventListener('click', () => {
+                var audio = new Audio('other/fireworks.mp3');
+                audio.play();
+            });
+        </script>
         <br>
         </p>
 
@@ -179,7 +187,7 @@ print(dictionary['delete me']) # this will cause an error</code></pre>
     <br>
     <div style="margin: auto;">
         <footer><span class="bold">Note:</span> I started coding around a year ago so most of the stuff here is probably incorrect, so don't take it to heart if the way something is explained here isn't the way you would explain it</footer>
-        <footer style="font-size: smaller;">Copyright © 2021 Fabyan Mikhael. All Rights Reserved</footer>
+        <footer style="font-size: smaller;">Copyright © 2021 Fabyan Mikhael</footer>
     </div>
 </body>
 </html>
