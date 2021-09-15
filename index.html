@@ -53,19 +53,19 @@
             keep this in mind as it helps to clear up some confusing behavior that you will see later (hopefully idk i haven't thought this over)
         
             
-            <h3>another example</h3>
+            <h3>Another Example</h3>
             <pre>
                 <code style="margin-bottom: -6%;">x = 10
 y = 3.65
 z = "hello"                </code>
             </pre>
-        this will create three variables: x,  y, and z
+        This will create three variables: x,  y, and z
         <br>
         <spa class="bold">x</spa> will have the value of <spa class="bold">10</spa> (points to a int object with value of 10)<br>
         <spa class="bold">y</spa> will have the value of <spa class="bold">3.65</spa> (points to a float object with value of 3.65)<br>
         <spa class="bold">z</spa> will have the value of the string <spa class="bold">"hello"</spa> (points to a string object with value of hello)<br>
         <br>
-        variables can always be re-assigned
+        Variables can always be re-assigned
         <br>
         Python does not allow you to make a variable <a title="unchanging over time or unable to be changed.">immutable</a>
         (Objects however can have immutable properties):
@@ -86,21 +86,21 @@ x = "can be changed to any type"               </code>
         <br>
         These types are defined by <a title="a template for creating objects">classes-</a> which are definitions that specify how an object should be built, what data it has and what it can do
         <br>
-        one thing I should note that is I have used a new syntax for declaring variables,
+        One thing I should note that is I have used a new syntax for declaring variables,
         <br>
-        this syntax allows you to explicitly set the type of the variable 
+        This syntax allows you to explicitly set the type of the variable 
         <br>
-        here's the format:
+        Here's the format:
         <pre><code>[variable name]: [type] = [value]</code></pre>
         <br>
         <br>
-        note however that this does not enforce the variable to hold only that type,
+        Note however that this does not enforce the variable to hold only that type,
         it is just for reading and autocompletion purposes
         <br>
         The basic types in python are:
         
         <h3 class="push_up_l">int (Integer) 🔢</h3>
-        represents a whole number.
+        Represents a whole number.
         <br> In newer python versions this type has no limit, you can set it to a number that is as high as you want
         <br>(-) negative and (+) positive
         <pre><code>x: int = 5</code></pre>
@@ -110,12 +110,12 @@ x = "can be changed to any type"               </code>
         <pre><code>x: float = 2.7</code></pre>
 
         <h3 class="push_up_l">str (String) 🏷️</h3>
-        represents a piece of text (a collection of 0, 1 or more characters)
+        Represents a piece of text (a collection of 0, 1 or more characters)
         <pre><code>x: str = "this is a string"</code></pre>
-        single quotes also work
+        Single quotes also work
         <pre><code>x: str = 'hello there!'</code></pre>
         <h3>bool (Boolean) 🔄</h3>
-        can be only be either <span class="ibold">True</span> or <span class="ibold">False</span>
+        Can be only be either <span class="ibold">True</span> or <span class="ibold">False</span>
         <pre><code>x: bool = False</code></pre>
 
         <h3 class="push_up_l">None ❓</h3>
@@ -140,15 +140,15 @@ hi  : str   = x[2]
 print(x)    #prints 4.325
 print(num2) #prints 7
 print(hi)   #prints hello</code></pre>
-        note that the indices for lists start at 0, so the first element is actually at the 0th index not 1
+        Note that the indices for lists start at 0, so the first element is actually at the 0th index not 1
         <br>
         ALSO the types (the <code>: float</code> part of <code>x: float</code>) I am writing are unneccessary but you should write them to get used to it
         (also helps with code completion)
         <br>
         <h3 class="push_up_l">Dictionary 📒</h3>
-        maps primitive or hashable objects to values of any type
+        Maps primitive or hashable objects to values of any type
         <br>
-        you can create a dictionary with the <code>{key: value,...}</code> constructor
+        You can create a dictionary with the <code>{key: value,...}</code> constructor
         <Pre><code>dictionary: dict = {'key': 'value', 3: 'three'}</code></Pre>
         This now means that in the dictionary: <br>
         <span style="font-weight: bold;">
@@ -156,7 +156,7 @@ print(hi)   #prints hello</code></pre>
         'key' --> 'value' <br>
         3     --> 'three' <br>
         <br></span>
-        retrieving an element from the dictionary is done by using an existing key with this syntax: <code>dictionary[key]</code>
+        Retrieving an element from the dictionary is done by using an existing key with this syntax: <code>dictionary[key]</code>
         <pre><code>dictionary: dict = {'key': 'value', 3: 'three'}
 key_item = dictionary['key'] #will be the string 'value'
 three = dictionary[3] #will be the string 'three'        </code></pre>
@@ -165,7 +165,7 @@ three = dictionary[3] #will be the string 'three'        </code></pre>
 dictionary['new val'] = 145.25
 dictionary['new val'] = 'changing the value'
         </code></pre>
-        finally, deleting a key/value pair can be done with: 
+        Finally, deleting a key/value pair can be done with: 
         <code>del dictionary[key]</code>
         <pre><code>dictionary = {}
 dictionary['delete me'] = ["you can nest lists", "and", "dictionaries"]
